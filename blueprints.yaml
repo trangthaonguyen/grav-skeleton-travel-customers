@@ -1,0 +1,127 @@
+name: Travel Customers
+version: 1.0.0
+description: Grav Skeleton convert from https://gridgum.com/themes/travel-free-bootstrap-template//
+icon:  suitcase
+author:
+  name: Nguyen Trang
+  email: flatfiledeveloper@gmail.com
+  url: https://flatfiledeveloper.com
+homepage: https://flatfiledeveloper.com
+demo:
+keywords: travel, free, skeleton, theme, modern, fast, responsive, html5, css3
+bugs:
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.4.0-rc.1' }
+
+form:
+  validation: loose
+  fields:
+    copyright:
+      type: text
+      label: THEME.TRAVEL.ADMIN.COPYRIGHT.LABEL
+      help: THEME.TRAVEL.ADMIN.COPYRIGHT.HELP
+    logo:
+      label: THEME.TRAVEL.ADMIN.LOGO.LABEL
+      help: THEME.TRAVEL.ADMIN.LOGO.HELP
+      type: file
+      destination: 'user/themes/travel/images'
+      multiple: false
+      accept:
+        - image/*
+    favicon:
+      label: THEME.TRAVEL.ADMIN.FAVICON.LABEL
+      help: THEME.TRAVEL.ADMIN.FAVICON.HELP
+      type: file
+      destination: 'user/themes/travel/images'
+      multiple: false
+      accept:
+        - image/*
+    bottom_links:
+      type: list
+      label: THEME.TRAVEL.ADMIN.BOTTOM_LINKS.LABEL
+      help: THEME.TRAVEL.ADMIN.BOTTOM_LINKS.HELP
+      fields:
+        .url:
+          type: text
+          label: THEME.TRAVEL.ADMIN.URL
+        .label:
+          type: text
+          label: THEME.TRAVEL.ADMIN.LABEL
+    social_networks:
+      type: section
+      title: THEME.TRAVEL.ADMIN.SOCIAL_NETWORKS
+      fields:
+        social_networks.headline:
+          type: text
+          label: THEME.TRAVEL.ADMIN.HEADLINE
+        social_networks.items:
+          type: list
+          label: THEME.TRAVEL.ADMIN.ITEMS
+          fields:
+            .url:
+              type: text
+              label: THEME.TRAVEL.ADMIN.URL
+            .image:
+              type: file
+              destination: 'user/themes/travel/images'
+              multiple: false
+              accept:
+                - image/*
+              label: THEME.TRAVEL.ADMIN.IMAGE
+    footer_links_1:
+      type: section
+      title: THEME.TRAVEL.ADMIN.FOOTER_LINKS_1
+      fields:
+        footer_links_1.headline:
+          type: text
+          label: THEME.TRAVEL.ADMIN.HEADLINE
+        footer_links_1.items:
+          type: list
+          label: THEME.TRAVEL.ADMIN.ITEMS
+          fields:
+            .url:
+              type: text
+              label: THEME.TRAVEL.ADMIN.URL
+            .label:
+              type: text
+              label: THEME.TRAVEL.ADMIN.LABEL
+    footer_links_2:
+      type: section
+      title: THEME.TRAVEL.ADMIN.FOOTER_LINKS_2
+      fields:
+        footer_links_2.headline:
+          type: text
+          label: THEME.TRAVEL.ADMIN.HEADLINE
+        footer_links_2.items:
+          type: list
+          label: THEME.TRAVEL.ADMIN.ITEMS
+          fields:
+            .url:
+              type: text
+              label: THEME.TRAVEL.ADMIN.URL
+            .label:
+              type: text
+              label: THEME.TRAVEL.ADMIN.LABEL
+    contact:
+      type: section
+      title: THEME.TRAVEL.ADMIN.CONTACT
+      fields:
+        contact.headline:
+          type: text
+          label: THEME.TRAVEL.ADMIN.HEADLINE
+        contact.content:
+          type: textarea
+          label: THEME.TRAVEL.ADMIN.CONTENT
+          rows: 5
+    blog: 
+      type: section
+      title: THEME.TRAVEL.ADMIN.BLOG
+      fields:
+        blog-page:
+          type: text
+          label: THEME.TRAVEL.ADMIN.BLOG_PAGE
+          help: THEME.TRAVEL.ADMIN.BLOG_PAGE_HELP
+          size: medium
+          default: '/blog'
